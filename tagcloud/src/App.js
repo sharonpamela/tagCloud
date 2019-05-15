@@ -10,7 +10,7 @@ const CenterDiv = styled.div`
   justify-content: center;
   grid-template-columns: auto auto; 
   font-family: 'Roboto', sans-serif;
-
+  margin:3%;
   @media (max-width: 700px) {
     grid-template-columns: auto;
   }
