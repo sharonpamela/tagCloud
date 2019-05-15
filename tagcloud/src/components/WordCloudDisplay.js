@@ -1,7 +1,15 @@
 import React from 'react';
 import WordCloud from 'react-d3-cloud';
+import styled from 'styled-components';
+
+const CenterDiv = styled.div`
+  display: grid;
+  justify-content: center;
+`;
 
 export default function WordCloudDisplay(props) {
+
+  console.log("this is the input entered by user: " , props)
 
   const data = [
     { text: 'Hey', value: 1000 },
@@ -15,10 +23,12 @@ export default function WordCloudDisplay(props) {
   const rotate = word => word.value % 360;
 
   return (
-    <WordCloud
-      data={data}
-      fontSizeMapper={fontSizeMapper}
-      rotate={rotate}
-    />
+    <CenterDiv>
+      <WordCloud
+        data={data}
+        fontSizeMapper={fontSizeMapper}
+        rotate={rotate}
+      />
+    </CenterDiv>
   );
 }
