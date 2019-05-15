@@ -1,4 +1,4 @@
-# tagCloud
+# TagCloud
 
 ## About:
 
@@ -13,5 +13,5 @@ react-d3-cloud
 https://sharonpamela.github.io/tagCloud/
 
 ## Screen capture:
-
+![Example](/tagcloud.png)
 
