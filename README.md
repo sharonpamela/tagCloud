@@ -7,10 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This app allows the user to enter a paragrah of text in the input box and generates a tagCloud (AKA Word Cloud) based on the words entered.
 
-## Technologies used:
-Node.js
-React.js
-react-d3-cloud
+## Technologies and libraries used:
+- Node.js
+- React.js
+- react-d3-cloud
 
 ## Deployed Link:
 https://sharonpamela.github.io/tagCloud/
