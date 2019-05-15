@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
 import InputTextArea from '../components/InputTextArea';
 import FormBtn from '../components/FormBtn';
-import WordCloudDisplay from "../components/WordCloudDisplay";
 
 class FormContainer extends Component {
     constructor(props) {
@@ -13,18 +11,18 @@ class FormContainer extends Component {
         }
 
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
-        this.handleClearForm = this.handleClearForm.bind(this);
         this.handleTextArea = this.handleTextArea.bind(this);
     }
 
     handleFormSubmit(e) {
         e.preventDefault();
-        WordCloudDisplay(this.state.inputTxt)
-    }
-
-    handleClearForm(e) {
-        e.preventDefault();
-        this.setState({ inputTxt: '' })
+        this.props.dataReturnHandler(this.state.inputTxt);
+        this.setState({
+            inputTxt: ''
+        });
+        // this.setState({
+        //     formatedData: formatData(this.state.inputTxt)
+        // });
     }
 
     handleTextArea(e) {
@@ -38,7 +36,7 @@ class FormContainer extends Component {
         return (
             <form onSubmit={this.handleFormSubmit}>
                 <InputTextArea
-                    title={'Enter text to generate a tagCloud:'}
+                    title={'Generate a tagCloud!'}
                     rows={10}
                     cols={50}
                     value={this.state.inputTxt}
@@ -51,8 +49,8 @@ class FormContainer extends Component {
                     type={'primary'}
                     title={'Generate'}
                 />
-            </form>
 
+            </form>
         );
     }
 }

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const TextAreaStyle = styled.textarea`
   padding: 5px;
-  cursor: pointer; 
 `
 
 const CenterDiv = styled.div`
