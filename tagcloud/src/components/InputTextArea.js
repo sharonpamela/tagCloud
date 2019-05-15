@@ -3,11 +3,13 @@ import styled from 'styled-components';
 
 const TextAreaStyle = styled.textarea`
   padding: 5px;
+  font-family: 'Roboto', sans-serif;
 `
 
 const CenterDiv = styled.div`
   display: grid;
   justify-content: center;
+  align-items:center;
 `;
 
 const InputTextArea = (props) => (  
@@ -19,7 +21,8 @@ const InputTextArea = (props) => (
       cols = {props.cols}
       value={props.value}
       onChange={props.handleChange}
-      placeholder={props.placeholder} />
+      placeholder={props.placeholder} 
+    />
   </CenterDiv>
 );
 

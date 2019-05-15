@@ -1,6 +1,30 @@
 import React, { Component } from "react";
 import InputTextArea from '../components/InputTextArea';
 import FormBtn from '../components/FormBtn';
+import styled from 'styled-components';
+
+const CenterDiv = styled.div`
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Roboto', sans-serif;
+    margin:5%;
+    `
+const FormBtnStyle = styled.div`
+    & {
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        margin: 4% 0%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    &:hover { 
+        color:white;
+        border-color: #4CAF50;
+        background-color: #4CAF50;
+    }
+`
 
 class FormContainer extends Component {
     constructor(props) {
@@ -20,9 +44,6 @@ class FormContainer extends Component {
         this.setState({
             inputTxt: ''
         });
-        // this.setState({
-        //     formatedData: formatData(this.state.inputTxt)
-        // });
     }
 
     handleTextArea(e) {
@@ -34,6 +55,7 @@ class FormContainer extends Component {
 
     render() {
         return (
+            <CenterDiv>
             <form onSubmit={this.handleFormSubmit}>
                 <InputTextArea
                     title={'Generate a tagCloud!'}
@@ -44,13 +66,14 @@ class FormContainer extends Component {
                     handleChange={this.handleTextArea}
                     placeholder={'<< Enter or paste text here >> '}
                 />
-
-                <FormBtn action={this.handleFormSubmit}
-                    type={'primary'}
-                    title={'Generate'}
-                />
-
+                <FormBtnStyle>
+                    <FormBtn 
+                        action={this.handleFormSubmit}
+                        title={'Generate'}
+                    />
+                </FormBtnStyle>
             </form>
+            </CenterDiv>
         );
     }
 }

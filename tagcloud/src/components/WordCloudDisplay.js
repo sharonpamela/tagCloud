@@ -3,9 +3,11 @@ import WordCloud from 'react-d3-cloud';
 import styled from 'styled-components';
 
 const CenterDiv = styled.div`
-  display: grid;
-  justify-content: center;
-`;
+    display: grid;
+    justify-content: center;
+    align-items:center; 
+    font-family: 'Roboto', sans-serif;
+`
 
 export default function WordCloudDisplay(props) {
 
@@ -16,7 +18,6 @@ export default function WordCloudDisplay(props) {
   let curatedStr = rawStr.replace(/[\.,`'"\/#!$\^&\*;:{}=_`~()@\+\?><\[\]\+]/g, "") // remove special chars
   let finalStr = curatedStr.replace(/[0-9]+ +/g, ''); // remove isolated numbers
   // finalStr = finalStr.replace(/( the | in | or | a | of | to | and | is | that | with | on | any | by | as | for )/, ' '); // remove most common articles
-  console.log(finalStr)
   finalStr = finalStr.replace(/\s{2,}/g, " "); //remove extra white spaces
 
   // format data
@@ -40,13 +41,16 @@ export default function WordCloudDisplay(props) {
 
   return (
     <CenterDiv>
-      <WordCloud
-        data={data}
-        fontSizeMapper={fontSizeMapper}
-        rotate={rotate}
-        width={500}
-        height={400}
-      />
+      {data.length > 1 ?
+        <WordCloud
+          data={data}
+          fontSizeMapper={fontSizeMapper}
+          rotate={rotate}
+          width={500}
+          height={400}
+        />
+        : null
+      }
     </CenterDiv>
 
   );
