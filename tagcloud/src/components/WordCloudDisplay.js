@@ -2,6 +2,9 @@ import React from 'react';
 import WordCloud from 'react-d3-cloud';
 import styled from 'styled-components';
 
+// Note: this component curates and renders a word cloud on the page
+
+
 const CenterDiv = styled.div`
     display: grid;
     justify-content: center;

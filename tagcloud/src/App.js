@@ -43,7 +43,12 @@ class App extends Component {
         });
     }
     
-
+    //note of component:
+    // Title: displays the title of the page
+    // FormContainer: displays the form and takes in user input
+    // WordCloud: curates user input and displays the word cloud
+    // alert: appears when the user tries to submit without text input
+     
     render() {
         return (
             <LayoutDiv>

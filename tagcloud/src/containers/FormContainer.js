@@ -3,6 +3,9 @@ import InputTextArea from '../components/InputTextArea';
 import FormBtn from '../components/FormBtn';
 import styled from 'styled-components';
 
+// Note: this component renders a form on the page
+
+
 const CenterDiv = styled.div`
     display: grid;
     justify-content: center;

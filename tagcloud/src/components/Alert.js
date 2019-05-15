@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Note: this component renders an alert for empty submition attemp on the page's form
 
 const AlertStyle = styled.div`
     padding: 20px;

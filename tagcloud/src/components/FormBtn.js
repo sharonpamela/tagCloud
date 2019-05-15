@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Note: this component renders a submit button for the page's text input form
+
+
 const ButtonStyle = styled.div`
   margin: 10px 10px 10px 10px;
   padding: 5px;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Note: this component renders a title for the page
 
 const TitleStyle = styled.div`
   display: grid;

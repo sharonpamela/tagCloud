@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Note: this component renders a text input field for the page's form
+
+
 const TextAreaStyle = styled.textarea`
   padding: 5px;
   font-family: 'Roboto', sans-serif;
