@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/tagCloud/static/js/main.1441b0fe.chunk.js",
+    "main.js.map": "/tagCloud/static/js/main.1441b0fe.chunk.js.map",
+    "runtime~main.js": "/tagCloud/static/js/runtime~main.d55c918b.js",
+    "runtime~main.js.map": "/tagCloud/static/js/runtime~main.d55c918b.js.map",
+    "static/js/2.a1db4d28.chunk.js": "/tagCloud/static/js/2.a1db4d28.chunk.js",
+    "static/js/2.a1db4d28.chunk.js.map": "/tagCloud/static/js/2.a1db4d28.chunk.js.map",
+    "index.html": "/tagCloud/index.html",
+    "precache-manifest.592999692e52397efa7477be34d13328.js": "/tagCloud/precache-manifest.592999692e52397efa7477be34d13328.js",
+    "service-worker.js": "/tagCloud/service-worker.js"
+  }
+}
